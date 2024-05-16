@@ -7,8 +7,8 @@ public class CrossbowItems
 {
     public static ItemWoodCrossbow woodenCrossbowBase;
 
-    public static ItemIronCrossbow ironCrossbowBase;
-    public static ItemGoldCrossbow goldCrossbowBase;
+
+
     public static ItemDiamondCrossbow diamondCrossbowBase;
 
     public static Item attachmentLimbBolt;
@@ -17,15 +17,15 @@ public class CrossbowItems
     {
         CrossbowItems.woodenCrossbowBase = (ItemWoodCrossbow) new ItemWoodCrossbow().setUnlocalizedName("woodenCrossbow").setMaxStackSize(1);
 
-        CrossbowItems.ironCrossbowBase = (ItemIronCrossbow) new ItemIronCrossbow().setUnlocalizedName("ironCrossbow").setMaxStackSize(1);
-        CrossbowItems.goldCrossbowBase = (ItemGoldCrossbow) new ItemGoldCrossbow().setUnlocalizedName("goldCrossbow").setMaxStackSize(1);
+
+
         CrossbowItems.diamondCrossbowBase = (ItemDiamondCrossbow) new ItemDiamondCrossbow().setUnlocalizedName("diamondCrossbow").setMaxStackSize(1);
         CrossbowItems.attachmentLimbBolt = new ItemCBMod().setUnlocalizedName("attachLimbBolt");
 
         GameRegistry.registerItem(CrossbowItems.woodenCrossbowBase, CrossbowItems.woodenCrossbowBase.getUnlocalizedName());
 
-        GameRegistry.registerItem(CrossbowItems.ironCrossbowBase, CrossbowItems.ironCrossbowBase.getUnlocalizedName());
-        GameRegistry.registerItem(CrossbowItems.goldCrossbowBase, CrossbowItems.goldCrossbowBase.getUnlocalizedName());
+
+
         GameRegistry.registerItem(CrossbowItems.diamondCrossbowBase, CrossbowItems.diamondCrossbowBase.getUnlocalizedName());
         GameRegistry.registerItem(CrossbowItems.attachmentLimbBolt, CrossbowItems.attachmentLimbBolt.getUnlocalizedName());
     }
