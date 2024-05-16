@@ -7,26 +7,14 @@ public class CrossbowItems
 {
     public static ItemWoodCrossbow woodenCrossbowBase;
 
-
-
-    public static ItemDiamondCrossbow diamondCrossbowBase;
-
     public static Item attachmentLimbBolt;
 
     public static void initItems()
     {
         CrossbowItems.woodenCrossbowBase = (ItemWoodCrossbow) new ItemWoodCrossbow().setUnlocalizedName("woodenCrossbow").setMaxStackSize(1);
-
-
-
-        CrossbowItems.diamondCrossbowBase = (ItemDiamondCrossbow) new ItemDiamondCrossbow().setUnlocalizedName("diamondCrossbow").setMaxStackSize(1);
         CrossbowItems.attachmentLimbBolt = new ItemCBMod().setUnlocalizedName("attachLimbBolt");
 
         GameRegistry.registerItem(CrossbowItems.woodenCrossbowBase, CrossbowItems.woodenCrossbowBase.getUnlocalizedName());
-
-
-
-        GameRegistry.registerItem(CrossbowItems.diamondCrossbowBase, CrossbowItems.diamondCrossbowBase.getUnlocalizedName());
         GameRegistry.registerItem(CrossbowItems.attachmentLimbBolt, CrossbowItems.attachmentLimbBolt.getUnlocalizedName());
     }
 }
