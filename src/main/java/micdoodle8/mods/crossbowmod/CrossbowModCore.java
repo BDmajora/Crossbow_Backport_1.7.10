@@ -94,7 +94,7 @@ public class CrossbowModCore
 
         CrossbowModCore.createBench = new Achievement("achievement.createBench", "CreateBench", 0, 0, CrossbowBlocks.crossbowBench, (Achievement) null).registerStat();
         CrossbowModCore.createCrossbow = new Achievement("achievement.createCrossbow", "CreateCrossbow", 0, 2, CrossbowItems.woodenCrossbowBase, CrossbowModCore.createBench).registerStat();
-        CrossbowModCore.sniper = new Achievement("achievement.sniper", "Sniper", 2, 3, ItemCrossbow.setAttachmentAndMaterial(new ItemStack(CrossbowItems.diamondCrossbowBase), EnumAttachmentType.longscope, EnumCrossbowMaterial.diamond, EnumCrossbowFireRate.none), CrossbowModCore.createCrossbow).setSpecial().registerStat();
+        CrossbowModCore.sniper = new Achievement("achievement.sniper", "Sniper", 2, 3, ItemCrossbow.setAttachmentAndMaterial(new ItemStack(CrossbowItems.woodenCrossbowBase), EnumAttachmentType.longscope, EnumCrossbowMaterial.diamond, EnumCrossbowFireRate.none), CrossbowModCore.createCrossbow).setSpecial().registerStat();
 
         AchievementPage.registerAchievementPage(new AchievementPage("Crossbow Mod", CrossbowModCore.createBench, CrossbowModCore.createCrossbow, CrossbowModCore.sniper));
 

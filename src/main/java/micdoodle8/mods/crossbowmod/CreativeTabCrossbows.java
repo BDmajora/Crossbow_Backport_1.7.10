@@ -17,7 +17,7 @@ public class CreativeTabCrossbows extends CreativeTabs
     @SideOnly(Side.CLIENT)
     public Item getTabIconItem()
     {
-        return CrossbowItems.diamondCrossbowBase;
+        return CrossbowItems.woodenCrossbowBase;
     }
 
     // @Override
