@@ -80,10 +80,6 @@ public class CrossbowModCore
         packetPipeline = CrossbowModChannelHandler.init();
 
         EntityRegistry.registerModEntity(EntityWoodBolt.class, "CB_WoodBolt", ConfigManager.idEntityWoodCrossbow, this, 64, 4, true);
-        EntityRegistry.registerModEntity(EntityStoneBolt.class, "CB_StoneBolt", ConfigManager.idEntityStoneCrossbow, this, 64, 4, true);
-        EntityRegistry.registerModEntity(EntityIronBolt.class, "CB_IronBolt", ConfigManager.idEntityIronCrossbow, this, 64, 4, true);
-        EntityRegistry.registerModEntity(EntityGoldBolt.class, "CB_GoldBolt", ConfigManager.idEntityGoldCrossbow, this, 64, 4, true);
-        EntityRegistry.registerModEntity(EntityDiamondBolt.class, "CB_DiamondBolt", ConfigManager.idEntityDiamondCrossbow, this, 64, 4, true);
 
         NetworkRegistry.INSTANCE.registerGuiHandler(this, CrossbowModCore.proxy);
 //        NetworkRegistry.INSTANCE.registerChannel(new ServerPacketHandler(), CrossbowModCore.MOD_ID, Side.SERVER);
