@@ -46,6 +46,10 @@ public class Util
             for (EnumCrossbowFireRate fireRate : EnumCrossbowFireRate.values())
             {
                 Util.addCrossbowBenchRecipe(new ItemStack(CrossbowItems.woodenCrossbowBase), attachment, EnumCrossbowMaterial.wooden, fireRate);
+                Util.addCrossbowBenchRecipe(new ItemStack(CrossbowItems.stoneCrossbowBase), attachment, EnumCrossbowMaterial.stone, fireRate);
+                Util.addCrossbowBenchRecipe(new ItemStack(CrossbowItems.ironCrossbowBase), attachment, EnumCrossbowMaterial.iron, fireRate);
+                Util.addCrossbowBenchRecipe(new ItemStack(CrossbowItems.goldCrossbowBase), attachment, EnumCrossbowMaterial.gold, fireRate);
+                Util.addCrossbowBenchRecipe(new ItemStack(CrossbowItems.diamondCrossbowBase), attachment, EnumCrossbowMaterial.diamond, fireRate);
             }
         }
         
