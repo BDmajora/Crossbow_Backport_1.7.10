@@ -14,6 +14,7 @@ import micdoodle8.mods.crossbowmod.network.CrossbowModChannelHandler;
 import micdoodle8.mods.crossbowmod.util.Util;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.stats.Achievement;
@@ -70,6 +71,9 @@ public class CrossbowModCore
         CrossbowModCore.proxy.preInit(event);
 
         CrossbowItems.initItems();
+
+        GameRegistry.addRecipe(new ItemStack(CrossbowItems.woodenCrossbowBase, 1), new Object[]
+                {"SIS", "XSX", 'S', Items.stick, 'I', Items.iron_ingot, 'X', Items.string});
     }
 
     @EventHandler
