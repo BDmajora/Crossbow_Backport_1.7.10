@@ -42,8 +42,6 @@ public class CrossbowModClient
     public static void init(FMLInitializationEvent event)
     {
         FMLCommonHandler.instance().bus().register(new CrossbowModClient());
-        LanguageRegistry.instance().addStringLocalization(CrossbowModCore.createBench.func_150951_e().getUnformattedText(), "First Step");
-        LanguageRegistry.instance().addStringLocalization(CrossbowModCore.createBench.func_150951_e().getUnformattedText() + ".desc", "Create a Crossbow Bench");
         LanguageRegistry.instance().addStringLocalization(CrossbowModCore.createCrossbow.func_150951_e().getUnformattedText(), "Well-Prepared!");
         LanguageRegistry.instance().addStringLocalization(CrossbowModCore.createCrossbow.func_150951_e().getUnformattedText() + ".desc", "Create any crossbow on a Crossbow Crafting Bench");
         LanguageRegistry.instance().addStringLocalization(CrossbowModCore.sniper.func_150951_e().getUnformattedText(), "Sniper King");
