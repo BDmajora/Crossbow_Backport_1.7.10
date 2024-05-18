@@ -72,8 +72,8 @@ public class CrossbowModCore
 
         CrossbowItems.initItems();
 
-        GameRegistry.addRecipe(new ItemStack(CrossbowItems.woodenCrossbowBase, 1), new Object[]
-                {"SIS", "XSX", 'S', Items.stick, 'I', Items.iron_ingot, 'X', Items.string});
+        CrossbowBlocks.initBlocks();
+        CrossbowBlocks.registerBlocks();
     }
 
     @EventHandler
